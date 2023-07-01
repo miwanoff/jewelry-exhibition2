@@ -35,29 +35,42 @@ a {
 
 /* Nav */
 
+.logo {
+  display: flex;
+  align-items: center;
+}
+/* Nav */
+
+ul.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+ul.navbar-nav li a {
+  color: #000;
+  text-align: center;
+  font-size: 16px;
+}
+
+.navbar-toggler {
+  border: none;
+  margin: 0;
+}
+
 .nav-link {
   color: #000;
 }
 
 .order a {
   /* display: flex; */
-  padding: 12px 46px;
+  padding: 12px 24px !important;
   /* justify-content: center; */
   align-items: center;
   gap: 8px;
   border-radius: 4px;
   color: #ffffff !important;
   background: var(--accent, #df617f);
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.navbar-toggler {
-  border: none;
-  margin: 0;
 }
 
 /* Hero */
@@ -120,6 +133,10 @@ a {
   color: var(--accent, #df617f);
   border: 2px solid var(--accent, #df617f);
   background: #fff;
+}
+
+.cta {
+  padding: 8px 20px;
 }
 
 h2 {
