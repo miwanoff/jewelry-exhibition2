@@ -4,6 +4,8 @@ const slides = [
   "images/jewelry3.png",
   "images/jewelry4.png",
   "images/jewelry5.png",
+  "images/jewelry3.png",
+  "images/jewelry4.png",
 ];
 
 $(function () {

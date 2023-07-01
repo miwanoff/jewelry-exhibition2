@@ -181,3 +181,61 @@ h2 {
 #slider .owl-carousel .item {
   background: grey;
 }
+
+.owl-theme .owl-dots {
+  padding-top: 16px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  background: url(./images/slider-empty-points.svg);
+  background-position: center center;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background: url(./images/slider-fill-point.svg);
+}
+
+.owl-theme .owl-dots:hover .owl-dot span {
+  background: url(./images/slider-fill-point.svg);
+}
+
+.owl-theme .owl-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  position: relative;
+  top: -96px;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 32px;
+}
+
+.owl-theme .owl-nav [class*="owl-"],
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: none;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-prev:hover {
+  background: url(./images/slider-prev-button.png);
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-next:hover {
+  background: url(./images/slider-next-button.svg);
+}
+
+.owl-carousel .owl-nav button.owl-prev span,
+.owl-carousel .owl-nav button.owl-next span {
+  display: none;
+}
+
+.owl-theme .owl-nav [class*="owl-"] {
+  background-color: none !important;
+}
