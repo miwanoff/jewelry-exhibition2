@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+ul,
+.description {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Nav */
+
+.nav-link {
+  color: #000;
+}
+
+.order a {
+  /* display: flex; */
+  padding: 12px 46px;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  color: #ffffff !important;
+  background: var(--accent, #df617f);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-toggler {
+  border: none;
+  margin: 0;
+}
+
+/* Hero */
+
+#hero-section {
+  height: 800px;
+  background: url(./images/jewelry-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.row {
+  max-width: 100%;
+}
+
+#hero-section .caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 60px;
+}
+
+#hero-section .caption h1 {
+  display: flex;
+  width: 879px;
+  flex-direction: column;
+  color: var(--secondary, #fff);
+  text-align: right;
+  font-size: 56px;
+  line-height: 100%;
+  letter-spacing: 1.12px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#hero-section .description {
+  color: #ffffff;
+  font-size: 24px;
+  font-family: Montserrat;
+  line-height: 150%;
+  margin-bottom: 0;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  color: var(--secondary, #fff);
+  background-color: var(--accent, #df617f);
+  font-size: 24px;
+  font-family: Montserrat;
+  line-height: 100%;
+  gap: 8px;
+}
+
+.button:hover {
+  color: var(--accent, #df617f);
+  border: 2px solid var(--accent, #df617f);
+  background: #fff;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 130%;
+  margin-bottom: 16px;
+}
+
+.description {
+  color: #000;
+  text-align: center;
+  font-size: 24px;
+  font-family: Montserrat;
+  line-height: 150%;
+}
+
+/* Slider */
+
+#slider p {
+  text-align: center;
+  font-size: 16px;
+  font-family: Montserrat;
+  line-height: 150%;
+  margin: 0 auto;
+}
