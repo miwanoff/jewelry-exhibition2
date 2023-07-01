@@ -145,3 +145,27 @@ h2 {
   line-height: 150%;
   margin: 0 auto;
 }
+
+#demos .owl-carousel {
+    margin: 2rem 0;
+  }
+  #demos .owl-carousel .item {
+    height: 10rem;
+    background: #4dc7a0;
+    padding: 1rem;
+  }
+  #demos .owl-carousel .item h4 {
+    color: #fff;
+    font-weight: 400;
+    margin-top: 0rem;
+  }
+  #demos .owl-carousel .item-video {
+    height: 300px;
+  }
+  #demos #setup {
+    margin-top: 4rem;
+  }
+  #demos .demo-list h5 {
+    margin: 0;
+  }
+  
