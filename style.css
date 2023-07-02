@@ -83,10 +83,6 @@ ul.navbar-nav li a {
   background-size: cover;
 }
 
-.row {
-  max-width: 100%;
-}
-
 #hero-section .caption {
   display: flex;
   flex-direction: column;
