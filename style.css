@@ -309,3 +309,78 @@ h2 {
 .accordion-button:not(.collapsed)::after {
   background-image: url(./images/open.png);
 }
+
+/* Contacts */
+
+#contact {
+  background-color: #fff;
+}
+
+#contacts ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#contacts ul li,
+#contacts ul li a {
+  color: #000;
+  font-size: 24px;
+  line-height: 150%;
+}
+
+#contacts ul li a:hover {
+  color: #df617f;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  margin-bottom: 24px;
+  font-size: 16px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+.contact-form button {
+  color: #fff;
+  box-shadow: none;
+  transition: all 0.3s;
+  font-size: 24px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  display: flex;
+  padding: 8px 20px;
+  align-items: flex-start;
+  border-radius: 4px;
+  border: 2px solid var(--accent, #df617f);
+  background: var(--accent, #df617f);
+}
+
+.contact-form button:hover {
+  border-radius: 4px;
+  border: 2px solid var(--accent, #df617f);
+  background: #ffffff;
+  color: #df617f;
+}
+
+.form-control:focus {
+  border: none;
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
