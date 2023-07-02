@@ -33,6 +33,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: #df617f;
+}
+
 /* Nav */
 
 .logo {
@@ -383,4 +387,33 @@ button:not(:disabled) {
   border: none;
   box-shadow: none;
   border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+footer {
+  background: var(--primary, #201e1e);
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+
+footer h4,
+footer p,
+footer ul,
+footer a {
+  color: var(--light, #fff);
+}
+
+footer ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 16px;
+}
+
+footer .logo {
+  position: relative;
+  top: -16px;
+}
+
+.section-title {
+    margin-bottom: 16px;
 }
