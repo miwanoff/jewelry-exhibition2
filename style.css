@@ -286,3 +286,26 @@ h2 {
   padding-top: 52px;
   padding-bottom: 52px;
 }
+
+/* Partners */
+
+.accordion-button:not(.collapsed) {
+  color: #131414;
+  background-color: #ffffff;
+  box-shadow: none;
+}
+
+#partners img {
+  height: 160px;
+}
+
+.accordion-button:focus {
+  border-color: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+.accordion-button::after,
+.accordion-button:not(.collapsed)::after {
+  background-image: url(./images/open.png);
+}
