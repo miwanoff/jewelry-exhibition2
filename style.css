@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+:root {
+  --accent-color: #df617f;
+  --primary-color: #201e1e;
+  --secondary-color: #fff;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -34,7 +40,7 @@ a {
 }
 
 a:hover {
-  color: #df617f;
+  color: var(--accent-color);
 }
 
 img {
