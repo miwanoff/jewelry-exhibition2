@@ -33,5 +33,11 @@ $(function () {
       $("#totop").css("opacity", "0"); // елемент прозорий
       $(".navbar").css("opacity", "1");
     }
+
+    /* Скролювати фонові шари з різною швидкістю*/
+    // $("#hero-section").css(
+    //   "background-position",
+    //   "center " + -($(window).scrollTop() * 0.5 + 120) + "px"
+    // );
   });
 });
