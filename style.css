@@ -448,7 +448,14 @@ footer .logo {
   }
 }
 
+/* Up Arrow  */
 .up a {
   position: relative;
   top: -40px;
+}
+
+
+/* Modal */
+.modal h4 {
+  padding-bottom: 0;
 }
