@@ -447,3 +447,8 @@ footer .logo {
     background-position: 40% center;
   }
 }
+
+.up a {
+  position: relative;
+  top: -40px;
+}
