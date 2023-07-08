@@ -24,5 +24,14 @@ $(function () {
         $(this).addClass("slide"); //додаємо до блоку клас slide з анімацією
       }
     });
+
+    // Якщо проскролювали більше, ніж на 200px
+    if ($(window).scrollTop() > 200) {
+      $("#totop").css("opacity", "0.8"); // непрозорість відновлюється
+      $(".navbar").css("opacity", "0.6");
+    } else {
+      $("#totop").css("opacity", "0"); // елемент прозорий
+      $(".navbar").css("opacity", "1");
+    }
   });
 });
