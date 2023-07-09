@@ -53,4 +53,48 @@ $(function () {
   $(".phone").mask("+38 (999)-999-9999", {
     autoсlear: false,
   });
+
+  // const scriptURL = 'https://script.google.com/macros/s/AKfycbx5jA5nKfg31oTek13-00Ig3B8O4Fqyk6bLvFRdAft84f5ACUI6Q5Rasiiz3brOyF_l/exec';
+  // const form = document.forms['submit-to-google-sheet']
+
+  // form.addEventListener('submit', e => {
+  //     e.preventDefault()
+  //     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+  //         .then(response => { alert('Success!') })
+  //         .catch(error => { alert('Error!') })
+  // })
+
+  const formModal = document.forms["submit-to-google-sheet-modal"];
+  sendDataToGoogleSheet(formModal);
+  const form = document.forms["submit-to-google-sheet"];
+  sendDataToGoogleSheet(form);
+
+  function sendDataToGoogleSheet(form) {
+    // formSel = "#" + form.id + " #time";
+    // console.log(formSel);
+    // var timeField = document.querySelector(formSel);
+    // var date = Date.now();
+    // timeField.value = date;
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      fetch(form.action, {
+        method: "Post",
+        body: new FormData(form),
+      })
+        .then((response) => {
+          // response.json();
+          $("#registration-modal").modal("hide");
+          $("#confirm-modal").modal("show");
+          //alert("!!!");
+          form.reset();
+        })
+
+        .catch((error) => {
+          $("#registration-modal").modal("hide");
+          $("#error-modal").modal("show");
+          //alert("error!");
+          form.reset();
+        });
+    });
+  }
 });

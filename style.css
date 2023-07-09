@@ -459,6 +459,12 @@ footer .logo {
   padding-bottom: 0;
 }
 
+.btn-danger,
+.btn-danger:active {
+  background-color: var(--accent-color);
+  border-radius: 4px;
+}
+
 /* Animation Effects */
 /* Зміна властивості opacity від 0% до 100% при прокручуванні елементів по осі Y */
 .slideanim {
